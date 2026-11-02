@@ -6,8 +6,30 @@ project like a student assignment.
 
 They're standard [Agent Skills](https://developers.openai.com/codex/skills)
 (`SKILL.md` format), so the same files work in **Claude Code**, **Codex**, and
-other standard-compliant agents. See **[INSTALL.md](INSTALL.md)** for per-agent
-setup.
+other standard-compliant agents.
+
+## Quick install
+
+**Claude Code** — each skill is its own plugin, so install any subset (or all
+four for the whole thing):
+
+```bash
+claude plugin marketplace add farbodghasemlu/enterprise-conduct
+claude plugin install trust-boundaries@enterprise-conduct
+claude plugin install professional-output@enterprise-conduct
+claude plugin install calibrated-judgment@enterprise-conduct
+claude plugin install enterprise-conduct@enterprise-conduct   # umbrella
+```
+
+**Codex** — copy the skills you want into `~/.agents/skills/`:
+
+```bash
+git clone https://github.com/farbodghasemlu/enterprise-conduct
+cp -r enterprise-conduct/plugins/trust-boundaries/skills/trust-boundaries ~/.agents/skills/
+```
+
+Manual install, Claude.ai `.skill` upload, and other agents: see
+**[INSTALL.md](INSTALL.md)**.
 
 The core idea is two instincts the agent is missing:
 
@@ -92,3 +114,7 @@ triggering and conduct are stochastic, so a single run per case is noisy.
 `professional-output` defers to **`humanizer`** for detailed prose patterns, and
 `calibrated-judgment` defers to **`right-sized-code`** for how much to build.
 Those are separate skills; install them alongside for the full effect.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
