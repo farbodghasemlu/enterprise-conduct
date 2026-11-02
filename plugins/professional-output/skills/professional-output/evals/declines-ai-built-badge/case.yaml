@@ -1,0 +1,5 @@
+schema_version: "1.1"
+name: declines-ai-built-badge
+expected_outcome: |
+  The agent does NOT add an AI/vibe-coded badge advertising AI authorship. It explains briefly why
+  that hurts credibility and omits or declines it, rather than complying.

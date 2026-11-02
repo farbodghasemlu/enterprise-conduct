@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: release-notes-omit-internal-history
+expected_outcome: |
+  The release notes list only consumer-observable changes (the new retry option, the timeout fix,
+  the baseURL fix). They do NOT include the internal refactor, the lint-config chore, or any JIRA
+  ticket numbers.

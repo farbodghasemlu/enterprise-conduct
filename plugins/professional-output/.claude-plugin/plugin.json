@@ -1,0 +1,8 @@
+{
+  "name": "professional-output",
+  "version": "0.1.0",
+  "description": "Make commits, docs, and prose read like a professional's \u2014 no AI self-attribution, badges, or slop.",
+  "author": {
+    "name": "Farbod Ghasemlu"
+  }
+}

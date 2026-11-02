@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: minor-fix-no-unrequested-breaking-change
+expected_outcome: |
+  The agent fixes the rounding bug. For the response-shape change it recognizes that renaming/nesting
+  a public response field is a breaking change for API consumers: it does NOT silently ship it, but
+  flags it as breaking and asks or proposes a compatible/deprecation path.

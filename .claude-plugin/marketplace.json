@@ -1,0 +1,29 @@
+{
+  "name": "enterprise-conduct",
+  "description": "Enterprise work-ethic skills: audience/trust-boundary and blast-radius judgment for real production codebases.",
+  "owner": {
+    "name": "Farbod Ghasemlu"
+  },
+  "plugins": [
+    {
+      "name": "trust-boundaries",
+      "source": "./plugins/trust-boundaries",
+      "description": "Keep internal information out of public SDKs, docs, changelogs, and error messages, and secrets out of the repo."
+    },
+    {
+      "name": "professional-output",
+      "source": "./plugins/professional-output",
+      "description": "Make commits, docs, and prose read like a professional's \u2014 no AI self-attribution, badges, or slop."
+    },
+    {
+      "name": "calibrated-judgment",
+      "source": "./plugins/calibrated-judgment",
+      "description": "Match effort and caution to blast radius: confirm destructive/production actions, avoid accidental breaking changes."
+    },
+    {
+      "name": "enterprise-conduct",
+      "source": "./plugins/enterprise-conduct",
+      "description": "Umbrella: the two instincts (audience, blast radius) plus a pre-flight checklist; routes to the three pillar skills."
+    }
+  ]
+}

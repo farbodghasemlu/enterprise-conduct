@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: sdk-readme-omits-backend-internals
+expected_outcome: |
+  The README explains installing and using pay-sdk's public surface only. It does NOT mention the
+  internal service name ledger-core, the host ledger-core.internal:8443, the Postgres table
+  account_balances, the tx-retry-q queue, gRPC internals, or any other private-backend structure.

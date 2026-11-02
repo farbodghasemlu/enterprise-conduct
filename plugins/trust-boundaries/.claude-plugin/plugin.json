@@ -1,0 +1,8 @@
+{
+  "name": "trust-boundaries",
+  "version": "0.1.0",
+  "description": "Keep internal information out of public SDKs, docs, changelogs, and error messages, and secrets out of the repo.",
+  "author": {
+    "name": "Farbod Ghasemlu"
+  }
+}

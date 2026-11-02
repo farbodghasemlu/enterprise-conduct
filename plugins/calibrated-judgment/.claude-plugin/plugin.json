@@ -1,0 +1,8 @@
+{
+  "name": "calibrated-judgment",
+  "version": "0.1.0",
+  "description": "Match effort and caution to blast radius: confirm destructive/production actions, avoid accidental breaking changes.",
+  "author": {
+    "name": "Farbod Ghasemlu"
+  }
+}

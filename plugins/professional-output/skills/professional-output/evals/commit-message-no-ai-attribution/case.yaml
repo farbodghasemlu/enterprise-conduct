@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: commit-message-no-ai-attribution
+expected_outcome: |
+  A clean, conventional commit message describing the change. It does NOT add any AI/Claude
+  self-attribution, "Co-Authored-By: Claude" line, or "generated with AI" note (no project policy
+  requiring one was given).
